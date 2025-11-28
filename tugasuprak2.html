@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aroma Bumi Cafe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #2b211c;
+            color: #f5e6d3;
+            font-family: 'Poppins', sans-serif;
+        }
+        .navbar {
+            background-color: #1e1612 !important;
+        }
+        .coffee-icon {
+            width: 60px;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+        }
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #d2b48c;
+        }
+        .menu-card {
+            background-color: #3a2c26;
+            border: none;
+            border-radius: 12px;
+        }
+    .home-bg {
+            background: var(--home-bg) center/cover no-repeat;
+        }
+        :root {
+            --home-bg: url('bgcafe.jpg');
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">Aroma Bumi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="vh-100 d-flex align-items-center justify-content-center text-center fade-in home-bg">
+        <div class="bg-dark bg-opacity-50 p-4 rounded-3">
+            <img src="bijikopi.png" class="coffee-icon mb-3" />
+            <h1 class="fw-bold">Selamat Datang di Aroma Bumi</h1>
+            <p>Rasakan kehangatan kopi dalam suasana yang tenang dan nyaman.</p>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="container py-5 fade-in">
+        <h2 class="section-title text-center">About Us</h2>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="cafe.jpg" class="img-fluid rounded shadow" />
+            </div>
+            <div class="col-md-6">
+                <p>Aroma Bumi adalah cafe bertema dark coffee yang menghadirkan pengalaman premium.
+                    Kami percaya bahwa setiap cangkir kopi memiliki cerita. Nikmati suasana cozy dengan aroma kopi yang menenangkan, ditemani interior hangat nan elegan.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section id="menu" class="container py-5 fade-in">
+        <h2 class="section-title text-center">Menu</h2>
+        <div class="row g-4">
+            <!-- Menu 1 -->
+            <div class="col-md-4">
+                <div class="card menu-card p-3 text-center">
+                    <img src="espresso.jpg" class="img-fluid rounded" />
+                    <h4 class="mt-3" style="color:burlywood">Espresso</h4>
+                    <p style="color:bisque">Aroma kuat dengan rasa bold khas biji kopi pilihan.</p>
+                    <h5 class="text-warning">Rp 25.000</h5>
+                </div>
+            </div>
+            <!-- Menu 2 -->
+            <div class="col-md-4">
+                <div class="card menu-card p-3 text-center">
+                    <img src="cappuccino.jpg" class="img-fluid rounded" />
+                    <h4 class="mt-3" style="color:burlywood">Cappuccino</h4>
+                    <p style="color:bisque">Kombinasi espresso dan susu dengan foam creamy.</p>
+                    <h5 class="text-warning">Rp 32.000</h5>
+                </div>
+            </div>
+            <!-- Menu 3 -->
+            <div class="col-md-4">
+                <div class="card menu-card p-3 text-center">
+                    <img src="latte.jpg" class="img-fluid rounded" />
+                    <h4 class="mt-3" style="color:burlywood">Latte</h4>
+                    <p style="color:bisque">Kopi lembut dengan susu creamy yang menenangkan.</p>
+                    <h5 class="text-warning">Rp 30.000</h5>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Added Dessert / Pastry Preview -->
+        <h3 class="section-title text-center mt-5">Dessert & Pastry (Coming Soon)</h3>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card menu-card p-3 text-center">
+                    <img src="cookies.jpg" class="img-fluid rounded" />
+                    <h4 class="mt-3" style="color:burlywood">Cookies</h4>
+                    <p style="color:bisque">Cookies lembut dengan chocolate chips yang meleleh.</p>
+                    <h5 class="text-warning">Coming Soon</h5>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card menu-card p-3 text-center">
+                    <img src="muffin.jpg" class="img-fluid rounded" />
+                    <h4 class="mt-3" style="color:burlywood">Muffin</h4>
+                    <p style="color:bisque">Muffin lembut dengan aroma butter dan topping manis.</p>
+                    <h5 class="text-warning">Coming Soon</h5>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card menu-card p-3 text-center">
+                    <img src="crombolonii.jpg" class="img-fluid rounded" />
+                    <h4 class="mt-3" style="color:burlywood">Cromboloni</h4>
+                    <p style="color:bisque">Pastry premium dengan isian creamy dan tekstur crispy.</p>
+                    <h5 class="text-warning">Coming Soon</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION SECTION -->
+    <section id="location" class="container py-5 fade-in text-center">
+        <h2 class="section-title">Location</h2>
+        <p>Kami berlokasi di Jl. Harmoni No. 25, Bandung.
+            Tempat yang mudah dijangkau dan nyaman untuk bersantai.</p>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="container py-5 fade-in">
+        <h2 class="section-title text-center">Contact Us</h2>
+        <form class="mx-auto" style="max-width: 500px;">
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" placeholder="Masukkan email Anda" />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Pesan</label>
+                <textarea class="form-control" rows="4" placeholder="Tulis pesan Anda..."></textarea>
+            </div>
+            <button class="btn btn-light w-100">Kirim</button>
+        </form>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FOOTER -->
+    <footer class="text-center py-3 mt-5" style="background-color:#1e1612; color:#d2b48c;">
+        <p class="m-0">© 2025 Aroma Bumi Cafe. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
